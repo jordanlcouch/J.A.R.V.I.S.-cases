@@ -108,7 +108,7 @@ def set_setting(config, ini, section, option, passed_option=None):
 
 
 @click.command()
-@click.option('config_file', '--config', type=click.File('r'), help="Configuation file", default= 'C:\\Users\\Jordancouch\\Desktop\\casebot-master\\casebot-master\\settings.ini')
+@click.option('config_file', '--config', type=click.File('r'), help="Configuation file", default= 'settings.ini')
 @click.option('slack_token', '--slack-token', envvar='SLACKBOT_API_TOKEN', help="Slack bot token")
 def configure(config_file, slack_token):
     """
